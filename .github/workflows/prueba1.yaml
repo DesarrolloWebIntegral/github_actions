@@ -1,6 +1,13 @@
 name: Desarrollo Web Integral
 
-on: [push]
+on: 
+  push:
+    branches:
+      - main
+  
+  pull_request:
+    branches:
+      - main
 
 jobs:
   hello:
@@ -24,5 +31,8 @@ jobs:
     needs:  hello
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
       - name: Desarrollo Web Integral
-        run:  ls -l
+        run:  ls -al
