@@ -10,3 +10,9 @@ jobs:
       - name: Desarrollo Web Integral
         run:  echo "Desarrollo Web Integral"
 
+  otro:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Desarrollo Web Integral
+        run:  ls -l
