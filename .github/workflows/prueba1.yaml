@@ -1,0 +1,12 @@
+name: Desarrollo Web Integral
+
+on: [push]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Desarrollo Web Integral
+        run:  echo "Desarrollo Web Integral"
+
