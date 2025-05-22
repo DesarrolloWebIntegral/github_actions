@@ -11,7 +11,13 @@ jobs:
         run:  echo "Desarrollo Web Integral"
       
       - name: Touch File
-        run: touch  prueba.txt
+        run: touch prueba.txt
+
+      - name: Set Texto
+        run:  echo "Bienvenidos" >> prueba.txt
+      
+      - name: Desplegar contenido
+        run:  cat prueba.txt
 
   otro:
     runs-on: ubuntu-latest
